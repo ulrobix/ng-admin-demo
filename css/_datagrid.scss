@@ -1,0 +1,18 @@
+.ng-admin-column-actions {
+    text-align: right;
+}
+
+.grid.table {
+    // Cells
+    > thead,
+    > tbody,
+    > tfoot {
+        > tr {
+            > th,
+            > td {
+                vertical-align: middle;
+                padding: 4px;
+            }
+        }
+    }
+}

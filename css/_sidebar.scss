@@ -1,0 +1,22 @@
+.sidebar {
+    position: relative;
+    z-index: 1040;
+
+    margin-top: 51px;
+
+    ul li {
+        border: none;
+
+        a.active {
+            color: $navbar-default-link-color;
+            background: $navbar-default-link-hover-bg;
+        }
+    }
+
+   @media(min-width:768px) {
+       position: fixed;
+       top: 0;
+       bottom: 0;
+   }
+
+}

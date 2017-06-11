@@ -17,6 +17,7 @@ module.exports = {
             { test: /\.html$/, loader: 'html' },
             { test: /\.(woff2?|svg|ttf|eot)(\?.*)?$/, loader: 'url' },
             { test: /\.css$/, loader: ExtractTextPlugin.extract('css') },
+            { test: /\.(jpg|png)(\?.*)?$/, loader: 'url-loader' },
             { test: /\.scss$/, loader: ExtractTextPlugin.extract('css!sass') }
         ],
     },

@@ -1,0 +1,31 @@
+.form-horizontal {
+
+    .date_widget {
+        width: 11em;
+        @media (max-width: 768px) {
+            width: 100%
+        }
+    }
+
+    .datetime_widget {
+        width: 16em;
+        @media (max-width: 768px) {
+            width: 100%
+        }
+    }
+
+    input[type="checkbox"], input[type="radio"] {
+        margin: 4px 0 0 -20px;
+    }
+
+    .checkbox {
+        padding-top: 4px;
+    }
+
+}
+
+ma-column {
+    .alert {
+        margin-bottom: 0;
+    }
+}

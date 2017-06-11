@@ -1,0 +1,65 @@
+.btn {
+    text-transform: uppercase;
+    font-size: $font-size-small;
+
+    &.ui-select-toggle {
+        font-size: $font-size-base;
+        font-weight: normal;
+        text-transform: none;
+
+        a.btn-xs {
+            font-size: $font-size-base;
+            text-transform: none;
+            padding: 1px 5px;
+        }
+    }
+}
+
+.btn-lg {
+    font-size: $font-size-large;
+}
+
+.btn-sm {
+    font-size: $font-size-small;
+}
+.btn-xs {
+    font-size: $font-size-small;
+}
+
+.ui-select-multiple.ui-select-bootstrap .ui-select-match {
+
+
+    .ui-select-match-item {
+        font-size: $font-size-base;
+        text-transform: none;
+    }
+
+    .close {
+        font-size: 21px;
+        line-height: 1;
+    }
+}
+
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+    font-size: 14px;
+    height: $input-height-base;
+}
+
+.ng-admin-column-actions {
+    .btn-ma-edit, .btn-ma-delete {
+        color: #333;
+        background-color: transparent;
+        font-weight: 500;
+        padding: 1px 2px 0px 4px;
+        border: none;
+    }
+}
+
+.ng-admin-grid-actions {
+    .btn-ma-create {
+        color: #333;
+        background-color: transparent;
+        font-weight: 500;
+    }
+}

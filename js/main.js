@@ -53,9 +53,11 @@ myApp.config(['NgAdminConfigurationProvider', function (nga) {
     require('./reviews/config')(nga, admin);
     require('./commands/config')(nga, admin);
     require('./settings/config')(nga, admin);
+    admin.layout(require('./layout.html'));
 
     admin.dashboard(require('./dashboard/config')(nga, admin));
     admin.header(require('./header.html'));
+
     admin.menu(require('./menu')(nga, admin));
 
     // attach the admin application to the DOM and execute it

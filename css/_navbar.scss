@@ -1,0 +1,121 @@
+/*
+.nav .dropdown-menu ,
+.nav li a:hover, .nav li a:focus, .sidebar ul li a.active ,
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background: #080808;
+}
+*/
+
+.sandstone,
+.navbar .nav > li > a,
+.nav,
+.breadcrumb,
+.pagination,
+.pager,
+.dropdown-menu > li > a,
+.tooltip,
+.panel .panel-heading,
+.panel .panel-title,
+.panel .panel-footer {
+    text-transform: uppercase;
+    font-size: $font-size-small;
+}
+
+.navbar {
+    min-height: 0;
+    /* background: $brand-primary */
+
+    .nav > li > a.dropdown-toggle-user {
+        text-transform: none;
+        font-size: $font-size-base;
+    }
+
+}
+
+/* open */
+.navbar-default {
+    &.navbar {
+        border-bottom: 1px solid black;
+    }
+
+    box-shadow: 0 0 6px;
+
+    @media (max-width: $grid-float-breakpoint-max) {
+        &.open {
+            box-shadow: none;
+        }
+    }
+
+    .navbar-toggle {
+        border-color: $navbar-inverse-toggle-border-color;
+        &:hover,
+        &:focus {
+            background-color: $navbar-inverse-toggle-hover-bg;
+        }
+        .icon-bar {
+            background-color: $navbar-inverse-toggle-icon-bar-bg;
+        }
+    }
+
+    .nav,
+    .dropdown-menu {
+        background: $navbar-default-bg;
+        /* open */
+
+        > li > a {
+            color: $navbar-default-link-color;
+            background: $navbar-default-bg;
+
+            &:hover,
+            &:focus {
+                color: $navbar-default-link-hover-color;
+                background-color: $navbar-default-link-hover-bg;
+            }
+        }
+        > .active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $navbar-default-link-active-color;
+                background-color: $navbar-default-link-active-bg;
+            }
+        }
+        > .disabled > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $navbar-default-link-disabled-color;
+                background-color: $navbar-default-link-disabled-bg;
+            }
+        }
+
+        .open > a {
+            &,
+            &:hover,
+            &:focus {
+                /* open */
+
+                color: $navbar-default-link-hover-color;
+                background-color: $navbar-default-link-hover-bg;
+            }
+        }
+
+    }
+
+}
+
+.navbar-collapse {
+    border-top: none;
+}
+
+.navbar-brand {
+    height: auto;
+    padding: 15px 15px 15px 90px;
+    background: url(../images/white_logo.png) no-repeat scroll 10px 5px;
+ 
+    @media (max-width: 560px) {
+        background: none;
+        padding-left: 15px;
+    }
+
+}
