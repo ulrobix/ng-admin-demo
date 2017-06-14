@@ -58,6 +58,19 @@ myApp.config(['NgAdminConfigurationProvider', function (nga) {
     admin.dashboard(require('./dashboard/config')(nga, admin));
     admin.header(require('./header.html'));
 
+    admin.customTemplate(function(viewName) {
+        console.log(viewName);
+        if (viewName === 'EditView') {
+            return require('./edit.html');
+        }
+        if (viewName === 'ListView') {
+            return require('./list.html');
+        }
+        if (viewName === 'ShowView') {
+            return require('./show.html');
+        }
+    });
+
     admin.menu(require('./menu')(nga, admin));
 
     // attach the admin application to the DOM and execute it
